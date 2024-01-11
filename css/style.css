@@ -1,0 +1,799 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins&family=Roboto:wght@300&family=Sarabun:wght@100;200;300;400;600;700;800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(238, 237, 237);
+  max-width: 100%;
+    overflow-x: hidden;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: solid 1px #CCC;
+}
+
+.nav-grab {
+  padding: 0.7rem 5rem 0.7rem 7.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grab-logo {
+  width: 110px;
+}
+
+.menu-grab {
+  font-family: "Sarabun";
+  display: flex;
+  gap: 4rem;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-grab-items a {
+  color: rgb(11, 11, 11);
+  text-decoration: none;
+}
+
+.menu-grab-items a:hover {
+  color: #00b14f;
+  transition: 0.3s;
+}
+
+.fondo-inicio {
+  margin-top: 4rem;
+  background: url(../resources/grab-fondo2.jpg) center center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem;
+}
+
+.hero-grab{
+  display: flex;
+  flex-direction: column;
+}
+.hero-grab2{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.fondo-inicio h2 {
+  font-family: "Sarabun";
+  font-size: 100px;
+  color: white;
+}
+
+
+.inicio-intro {
+  background-color: #00b14f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Sarabun";
+  color: white;
+  padding: 1rem 0 2rem 0;
+  gap: 1rem;
+}
+
+.inicio-intro h2 {
+  font-size: 50px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.inicio-intro p {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.inicio-intro button {
+  background-color: transparent;
+  font-weight: 500;
+  color: white;
+  font-size: 1rem;
+  border-radius: 50px;
+  padding: 7px 20px;
+  border-style: none;
+  cursor: pointer;
+  border: solid 2px white;
+  transition: 0.5s ease;
+}
+
+.svg {
+  color: white;
+}
+
+.about-us {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+  padding-block: 8rem;
+}
+
+.about-us-container {
+  background-color: white;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.3rem;
+  font-family: "Sarabun";
+  padding: 2rem;
+  border-radius: 10px;
+  border: solid 2px #CCC;
+}
+
+.about-us-container svg {
+  color: #00b14f;
+}
+
+.about-us-container h2 {
+  color: #00221d;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.about-us-container p {
+  color: rgb(56, 56, 56);
+  font-size: 18px;
+}
+
+.about-us-container a {
+  color: #00221d;
+  font-weight: 600;
+}
+
+.video-loop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(238, 237, 237);
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99.5%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.texto {
+  font-family: "Sarabun";
+  font-size: 90px;
+  max-width: 50%;
+  color: white;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contenedores {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-inline: 100px;
+  margin: 8rem;
+}
+
+.contenedores-left,
+.contenedores-right {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contenedores-info {
+  width: 100%;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 30px;
+  font-family: "Sarabun";
+}
+
+.contenedores-icon {
+  font-size: 55px;
+  color: #00b14f;
+  transition: transform 0.4s ease;
+}
+
+.contenedores-icon:hover {
+  transform: scale(1.1);
+  transition: 0.3s linear;
+}
+
+.contenedores-texto {
+  color: #1d1d1d;
+}
+
+.random {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #002e27;
+}
+
+.random-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.3rem;
+  color: white;
+  font-family: "Sarabun";
+  margin: 5rem;
+}
+
+.random-container h2 {
+  font-size: 35px;
+  font-weight: 200;
+}
+
+.random-container h3 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.random-container button {
+  background-color: #001e1f;
+  font-family: "Sarabun";
+  font-weight: 500;
+  color: white;
+  font-size: 1rem;
+  border-radius: 50px;
+  margin: 1rem 1rem 1rem 0rem;
+  padding: 7px 20px;
+  border-style: none;
+  cursor: pointer;
+  border: solid 2px white;
+  transition: 0.5s ease;
+}
+
+.random-container button:hover {
+  background-color: white;
+  color: #001e1f;
+  border: solid 2px #001e1f;
+  transition: 0.4s;
+}
+
+.porcentajes {
+  padding-block: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+.porcentajes h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  width: 700px;
+  font-family: "Sarabun";
+}
+
+.contenedoress {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.porcentajes-container1,
+.porcentajes-container2,
+.porcentajes-container3 {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Sarabun";
+  border-radius: 10px;
+}
+
+.porcentajes-container1 {
+  background-color: #00b14f;
+}
+.porcentajes-container2 {
+  background-color: #002e27;
+}
+.porcentajes-container3 {
+  background-color: white;
+  border: solid 2px #CCC;
+}
+
+.porcentajes-container1 h2 {
+  font-size: 90px;
+  font-weight: 600;
+  color: white;
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.porcentajes-container1 p {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 4rem;
+  padding-inline: 1rem;
+  line-height: 1.5;
+}
+
+.porcentajes-container2 h2 {
+  font-size: 90px;
+  padding-top: 3rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.porcentajes-container2 p {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 4rem;
+  padding-inline: 1rem;
+  line-height: 1.5;
+}
+
+.porcentajes-container3 h2 {
+  font-size: 90px;
+  padding-top: 3rem;
+  font-weight: 600;
+  color: #1d1d1d;
+  margin-bottom: 1.5rem;
+}
+
+.porcentajes-container3 p {
+  font-size: 18px;
+  color: #1d1d1d;
+  margin-bottom: 4rem;
+  padding-inline: 1rem;
+  line-height: 1.5;
+}
+
+.contact-us {
+  background-color: #00b14f;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Sarabun";
+}
+
+.contact-texto {
+  color: white;
+  width: 500px;
+  font-family: "Sarabun";
+  text-align: left;
+}
+
+.contact-texto h2 {
+  font-size: 50px;
+  margin-bottom: 1rem;
+}
+
+.contact-texto p {
+  font-size: 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.contact-form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contact-title2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.contact-campos,
+.contact-campos2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.input-style,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #ebeceb;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #ebeceb;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.375rem;
+}
+
+.input-style::placeholder,
+.textarea::placeholder {
+  color: black;
+  font-family: "Sarabun";
+  font-size: 14px;
+}
+
+.submit {
+  background-color: #00221d;
+  width: 100%;
+  font-family: "Sarabun";
+  font-weight: 500;
+  color: white;
+  font-size: 1rem;
+  border-radius: 50px;
+  margin: 1rem 1rem 1rem 0rem;
+  padding: 7px 20px;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+
+.img-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+}
+
+footer {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  font-family: "Sarabun";
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15rem;
+}
+
+.footer-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.footer-container a,
+.footer-container i,
+.footer-container p {
+  color: rgb(80, 80, 80);
+}
+
+.grab-logo-footer {
+  width: 90px;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #00221d;
+  color: white;
+  gap: 1rem;
+  font-family: "Sarabun";
+  padding: 1rem;
+}
+
+.copyright img {
+  border-radius: 5px;
+}
+
+.icons-phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/**About-US**/
+
+.hero-about-us {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #00b14f;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.about-us-container-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 60%;
+  font-family: "Sarabun";
+  padding-top: 8rem;
+  padding-left: 4rem;
+  gap: 1rem;
+}
+
+.about-us-container-hero h2 {
+  font-size: 60px;
+  font-weight: 800;
+  color: #00221d;
+}
+
+.black-bar {
+  width: 100%;
+  min-height: 18px;
+  background-color: #00221d;
+}
+
+.about-us-container-hero h3 {
+  font-size: 70px;
+  font-weight: 800;
+  color: rgb(238, 237, 237);
+}
+
+.about-us-container-hero p {
+  font-family: "Poppins";
+  font-size: 17px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+
+.about-us-information{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.about-us-title{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: .5rem;
+  font-family: "Sarabun";
+  color:#00221d;
+  margin: 2rem 4rem 0rem 4rem;
+}
+
+.about-us-title h2{
+font-size: 40px;
+}
+
+.side-bar{
+  width: 160px;
+  min-height: 18px;
+  background-color:#00b14f ;
+}
+
+.number{
+  font-size: 40px;
+  font-family: "Sarabun";
+  font-weight: 800;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  color: white;
+  background-color: #00b14f;
+  border-radius: 10px;
+}
+
+.intro-about-us{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.intro-about-us-container{
+  background-color: white;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+  gap: 1rem;
+  font-family: "Sarabun";
+  padding: 2.5rem 2rem;
+  border-radius: 30px;
+  margin-bottom: 4rem;
+  border: solid 2px #CCC;
+}
+
+.intro-about-us-container p{
+  line-height: 1.7;
+}
+
+.intro-about-us-container h2{
+  font-size: 40px;
+}
+
+.intro-about-us-container a{
+  font-family: "Poppins";
+  color:#00b14f;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.nav-button{
+
+  border-style: none;
+  cursor: pointer;
+  background-color: #00b14f;
+  border-radius: 10px;
+  padding: .4rem 1rem;
+  font-family: "Sarabun";
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+
+.navbar-expand-lg{
+  padding-inline: 6.7rem !important;
+}
+
+li{
+  padding-inline: 1rem;
+}
+
+.navbar-toggler{
+border: none !important;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none !important;
+}
+
+.fade-in{-webkit-animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both}
+
+
+ @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+
+
+ @media  screen and(max-width: 1100px) {
+
+  .contact-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  }
+  
+  .contact-texto h2{
+    padding-top: 2rem;
+  }
+ 
